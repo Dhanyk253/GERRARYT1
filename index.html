@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="full-img" id="fullImgbox">
+        <img src="image/pexels.jpg" id="fullImg">
+        <span onclick="closeFullImg()">X</span>
+        </div>
+    <div class="image-gallery" > 
+        <img src="image/pexels.jpg" onclick="openfullImg(this.src)">
+        <img src="image/pexels-anjana-c-169994-674010.jpg" onclick="openfullImg(this.src)">
+        <img src="image/pexels-hieu-697259.jpg" onclick="openfullImg(this.src)">
+        <img src="image/pexels-janodude-110686.jpg" onclick="openfullImg(this.src)">
+        <img src="image/pexels-minan1398-906150.jpg" onclick="openfullImg(this.src)">
+        <img src="image/pexels-pixabay-206648.jpg" onclick="openfullImg(this.src)">
+        <img src="image/pexels-pixabay-39574.jpg" onclick="openfullImg(this.src)">
+        <img src="image/pexels-sevenstormphotography-381739.jpg" onclick="openfullImg(this.src)">
+    </div>
+    <script>
+
+        var fullImgbox = document.getElementById("fullImgbox");
+        var fullImg = document.getElementById("fullImg");
+
+        function openfullImg(pic) {
+            fullImgbox.style.display = "flex";
+            fullImg.src = pic;
+            
+        }
+        function closefullImg(){
+            fullImgbox.style.display = "none";
+        }
+    </script>
+
+</body>
+</html>
